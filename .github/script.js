@@ -9,11 +9,16 @@ function afficherEtoiles(nbEtoiles){
 
 //1.2 Carré d’étoiles
 function afficherRectangle(hauteur, largeur){
-    const rectangle = afficherEtoiles(largeur)
+    const rectangle = afficherEtoiles(largeur)+ '\n'
     //console.log(rectangle)
-    for (let i=0; i< hauteur; i++){
-    console.log(rectangle)
-   }
+    return rectangle.repeat(hauteur)
+   
 }
+//console.log(afficherRectangle(5,5))
+//console.log(afficherRectangle(3,4))
 
-afficherRectangle(5,5)
+//1.3 Triangle d’étoiles
+function afficherTriangleDroite(nbslash){
+    console.log(afficherRectangle)
+
+}
