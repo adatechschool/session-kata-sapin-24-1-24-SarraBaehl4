@@ -37,4 +37,18 @@ function afficherTriangleGauche(nbSlash){
   }
   return triangleGauche
 }
-console.log(afficherTriangleGauche(5))
+//console.log(afficherTriangleGauche(5))
+
+//1.5 Assemblage et décorations
+function afficherPointeSapin(etage){
+  let sapin = ' ';
+  for (let i = 1; i< etage; i++){
+    const triangleGauche = afficherTriangleGauche(i);
+    const triangleDroite = afficherTriangleDroite(i)
+    sapin += (triangleGauche + "|" + triangleDroite);
+
+  }
+  console.log ('+'+'\n' + sapin)
+}
+//console.log(afficherPointeSapin(5))
+afficherPointeSapin(5)
